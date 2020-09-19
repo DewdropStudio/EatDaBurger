@@ -20,7 +20,9 @@
 			{{#each burgers}}
 			{{#unless devoured}}
 			<div class="burgerblock">
-				<img src="./assets/img/burger.png" class="tinyicon burgericon"><img src="./assets/img/eat.png" class="tinyicon eaticon" data-id="{{this.id}}"><h2>{{burger_name}}</h2>
+				{{!-- <img src="./assets/img/burgericon.png " width="20" height="20" class="tinyicon burgericon"> --}}
+				
+				<img src="./assets/img/eaticon.png" width=30 height="30" class="tinyicon eaticon" data-id="{{this.id}}"><h2>{{burger_name}}</h2>
 			</div>
 			{{/unless}}
 			{{/each}}
@@ -31,7 +33,9 @@
 			{{#each burgers}}
 			{{#if devoured}}
 			<div class="burgerblock">
-				<img src="./assets/img/burger.png" class="tinyicon burgericon eaten"><img src="./assets/img/waiter.png" class="tinyicon waitericon" data-id="{{this.id}}"><h2>{{burger_name}}</h2>
+				{{!-- <img src="./assets/img/eaticon.png" class="tinyicon burgericon eaten"> --}}
+				
+				<img src="./assets/img/burgericon.png" width=20 height="20" class="tinyicon waitericon" data-id="{{this.id}}"><h2>{{burger_name}}</h2>
 			</div>
 			{{/if}}
 			{{/each}}
